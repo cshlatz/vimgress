@@ -21,7 +21,7 @@ if num-entries(session:parameter) >= 2 then do :
 end.
 
 propath = "".
-if not connected("rectrac") then connect value("").
+if not connected("application") then connect value("").
 
 /* Compile without saving */
 compile value( CH_PROG ) save=no no-error.
@@ -71,7 +71,7 @@ end.
 
 message vimstring.
 
-disconnect rectrac.
+disconnect application.
 /* End of program */
 
 
